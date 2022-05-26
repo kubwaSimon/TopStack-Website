@@ -7,9 +7,34 @@
     <title>TopStack tech LTD</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script>
+    <script src='script.js'></script>
     <link rel=" stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
 </head>
+<navbar>
+    <section class="banner">
+        <a href="#" class="Logo">TopStack Tech</a>
+
+
+        <div class="nav-links" id="Navlinks">
+            <i class="fa-solid fa-xmark" aria-hidden="true" onclick="hidemenu()"></i>
+
+            <ul>
+                <li>
+                    <a href="index.html">Home</a> </li>
+                <li>
+                    <a href="about.html">Services</a> </li>
+                <li>
+                    <a href="book.html">Contact Us</a> </li>
+                <li>
+                    <a href="index.html">Profile</a> </li>
+            </ul>
+        </div>
+
+
+
+        <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+    </section>
+</navbar>
 
 <body>
     <section class="services">
@@ -73,6 +98,20 @@
 
         </section>
         <!------------------------------------------------------------------------->
+        <!---------------------------------------JAVASCRIPT------------------------->
+        <script>
+            var Navlinks = document.getElementById("Navlinks");
+
+            function showmenu() {
+                Navlinks.style.right = "0";
+            }
+
+            function hidemenu() {
+                Navlinks.style.right = "-200px";
+            }
+        </script>
+        <!-------------------------------------------------------------------------->
+        <script src="script.js"></script>
 
 </body>
 

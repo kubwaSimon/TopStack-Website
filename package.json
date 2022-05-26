@@ -1,0 +1,22 @@
+{
+    "name": "topstack",
+    "version": "1.0.0",
+    "description": "Topstack web project",
+    "main": "script.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss style.css -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kubwaSimon/TopStack-Website.git"
+    },
+    "author": "kubwasimon",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kubwaSimon/TopStack-Website/issues"
+    },
+    "homepage": "https://github.com/kubwaSimon/TopStack-Website#readme",
+    "devDependencies": {
+        "node-sass": "^7.0.1"
+    }
+}
