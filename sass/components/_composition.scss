@@ -1,0 +1,36 @@
+.composition__photo {
+    width: 55%;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.5rem 4rem rgba(green, 0.4);
+    position: absolute;
+    z-index: 10;
+    transition: all 1s;
+    padding-top: 5px;
+    margin-top: 4rem;
+}
+
+.composition__photo--p1 {
+    left: 0;
+    top: -2rem;
+}
+
+.composition__photo--p2 {
+    right: 0;
+    top: 2rem;
+}
+
+.composition__photo--p3 {
+    left: 20%;
+    top: 5rem;
+}
+
+.composition__photo:hover {
+    outline: 1.5rem solid color rgba(green, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 2.5rem 4rem rgba(35, 194, 35, 0.5);
+    z-index: 20;
+}
+
+
+/*--------------------------------------------------------------
+            /*----------------expertise inner button-----------------------*/

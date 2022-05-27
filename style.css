@@ -105,8 +105,7 @@ nav .fa-solid {
   margin-top: 20px;
   font-weight: 600; }
 
-/*------------------------------------------------------------------------
-            /*----------------------ICONS--------------------------------------------*/
+/*----------------------ICONS--------------------------------------------*/
 .fa-solid {
   color: #f44336;
   display: hidden; }
@@ -115,7 +114,6 @@ nav .fa-solid {
   color: blue; }
 
 /*---------------------------------------------------------------------*/
-/*---------------------------------------------------------*/
 /*--------------------------MEDIA QUERIES-----------------------------*/
 @media (max-width: 700px) {
   .text-box h1 {
@@ -130,7 +128,7 @@ nav .fa-solid {
     line-height: 30%; }
   .nav-links {
     position: absolute;
-    background: #bdb06a;
+    background: #bd826a;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -155,15 +153,106 @@ nav .fa-solid {
   .section-booking {
     width: 100%; } }
 
-/*---------------------------------------------------------------
-                        /*-----------------------------SERVICES------------------------*/
+@media (min-width: 400px) {
+  .section-booking {
+    margin: 0 auto;
+    width: 100%; }
+  .banner {
+    margin: 0 auto;
+    width: 100%; }
+  .service-2 {
+    width: 80%; } }
+
+.book-form label {
+  font-weight: 700; }
+
+.booking-page .btn-hero {
+  color: rgba(43, 38, 33, 0.884);
+  text-transform: uppercase;
+  background-color: aquamarine;
+  border-radius: 10px; }
+
+.inquiry {
+  background-size: cover;
+  border-radius: 0.3rem;
+  background-image: linear-gradient(105deg, rgba(162, 195, 240, 0.815) 0%, rgba(111, 160, 82, 0.815) 50%, transparent 50%), url(images/image-11.jfif);
+  margin-bottom: 0.2rem;
+  width: 90%;
+  height: 80%;
+  padding: 1rem 0; }
+
+.inquiry__form {
+  width: 50%;
+  padding: 1rem;
+  margin-left: 5rem; }
+
+.form-group {
+  margin-left: 3rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(245, 245, 245, 0.397);
+  border: none;
+  font-family: inherit;
+  width: 40%;
+  display: block;
+  border-bottom: 2px solid transparent;
+  margin-bottom: 2rem; }
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(43, 75, 218, 0.103);
+  border-bottom: 2px solid #bfcc0f; }
+
+.lbl__form {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 4rem;
+  margin-top: .5rem;
+  display: block; }
+
+.lbl__form:not(:last-child) {
+  margin-bottom: 5rem; }
+
+.composition__photo {
+  width: 55%;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.5rem 4rem rgba(0, 128, 0, 0.4);
+  position: absolute;
+  z-index: 10;
+  transition: all 1s;
+  padding-top: 5px;
+  margin-top: 4rem; }
+
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem; }
+
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem; }
+
+.composition__photo--p3 {
+  left: 20%;
+  top: 5rem; }
+
+.composition__photo:hover {
+  outline: 1.5rem solid color rgba(0, 128, 0, 0.4);
+  transform: scale(1.05);
+  box-shadow: 0 2.5rem 4rem rgba(35, 194, 35, 0.5);
+  z-index: 20; }
+
+/*--------------------------------------------------------------
+            /*----------------expertise inner button-----------------------*/
+/*-----------------------------SERVICES------------------------*/
 .services {
   width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
-  cursor: progress;
-  background-color: aliceblue; }
+  cursor: progress; }
 
 h1 {
   font-size: 36px;
@@ -222,7 +311,7 @@ h3 {
 /*----------------------service-2-col---------------------*/
 .service-2-col {
   flex-basis: 30%;
-  background: #fff3f3;
+  background: #cbe4e7;
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 16px 10px;
@@ -245,6 +334,12 @@ h3 {
   text-align: center;
   padding-top: 50px; }
 
+.expertise h3 {
+  background-image: Linear-gradient(to right, rgba(25, 219, 25, 0.856), rgba(61, 226, 61, 0.76));
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 19.5px; }
+
 .expertise-col {
   flex-basis: 49%;
   border-radius: 45%;
@@ -253,42 +348,19 @@ h3 {
   position: relative;
   text-align: left; }
 
+.section-inquiry h3 {
+  margin-top: 25px;
+  background-image: Linear-gradient(to right, rgba(25, 219, 25, 0.856), rgba(61, 226, 61, 0.76));
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 19.5px; }
+
 /*-------------------------------------------------------------------------
                         /*-----------------------COMPOSITION PHOTO----------------------------------*/
 .composition {
   padding-top: 5px;
   margin-top: 5px; }
 
-.composition__photo {
-  width: 55%;
-  border-radius: 0.2rem;
-  box-shadow: 0 0.5rem 4rem rgba(0, 128, 0, 0.4);
-  position: absolute;
-  z-index: 10;
-  transition: all 1s;
-  padding-top: 5px;
-  margin-top: 4rem; }
-
-.composition__photo--p1 {
-  left: 0;
-  top: -2rem; }
-
-.composition__photo--p2 {
-  right: 0;
-  top: 2rem; }
-
-.composition__photo--p3 {
-  left: 20%;
-  top: 5rem; }
-
-.composition__photo:hover {
-  outline: 1.5rem solid color rgba(0, 128, 0, 0.4);
-  transform: scale(1.05);
-  box-shadow: 0 2.5rem 4rem rgba(35, 194, 35, 0.5);
-  z-index: 20; }
-
-/*--------------------------------------------------------------
-                        /*----------------expertise inner button-----------------------*/
 /*-------------------------------------------------*/
 /*------------------TESTIMONIALS-------------------*/
 .testimonials {
@@ -344,21 +416,31 @@ h3 {
 .footer {
   width: 100%;
   text-align: center;
-  padding: 30px 0; }
+  padding: 30px 0;
+  background-color: #3b3737; }
 
 .footer h4 {
   margin-bottom: 25px;
   margin-top: 20px;
-  font-weight: 600; }
+  font-weight: 600;
+  color: antiquewhite;
+  font-size: 17px;
+  text-transform: uppercase; }
+
+.footer p {
+  color: antiquewhite;
+  font-size: 17px; }
 
 /*------------------------------------------------------------------------
                         /*----------------------ICONS--------------------------------------------*/
 .fa-solid {
-  color: #f44336;
-  display: hidden; }
+  color: #2b2828;
+  display: hidden;
+  height: 20px; }
 
 .icons {
-  color: blue; }
+  color: blue;
+  height: 50px; }
 
 /*---------------------------------------------------------------------*/
 /*------------------------------BOOK.HTML-----------------------------*/
@@ -382,77 +464,60 @@ h3 {
             .book-form {
                 padding: 10px;
             }*/
-.section-booking {
-  padding: 15rem 0;
-  background-image: linear-gradient(to left bottom, rgba(98, 228, 98, 0.226), rgba(154, 219, 57, 0.603)); }
-
-.book {
-  background-image: url(images/image-1.jfif);
-  background-size: 100%; }
-
-@media (min-width: 400px) {
-  .section-booking {
-    margin: 0 auto;
-    width: 100%; } }
-
-.book-form label {
-  font-weight: 700; }
-
-.booking-page .btn-hero {
-  color: rgba(43, 38, 33, 0.884);
-  text-transform: uppercase;
-  background-color: aquamarine;
-  border-radius: 10px; }
-
-/*--------------------------------------------------------------------------------*/
-/*-------------------------------BOOK-FORM-----------------------------------------*/
 /*----------------------------------NAV FOR FORM & ABOUT---------------------------*/
 .banner {
   background: rgba(189, 219, 159, 0.616);
   height: 80px;
-  width: 100%;
   display: flex;
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
-  position: sticky; }
+  width: 100%;
+  background-image: Linear-gradient(rgba(153, 179, 114, 0.5), rgba(132, 236, 132, 0.5)), url(images/image-11.jfif);
+  background-position: center;
+  background-size: cover;
+  position: relative; }
 
-.book-form label,
-.book-form input,
-.book-form select {
+.inquiry {
+  background-size: cover;
+  border-radius: 0.4rem;
+  background-image: linear-gradient(105deg, rgba(202, 218, 240, 0.815) 0%, rgba(209, 235, 194, 0.815) 50%, transparent 50%), url(images/image-11.jfif);
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+  align-items: center; }
+
+.inquiry__form {
+  width: 50%;
+  padding: 1rem;
+  margin-left: 5rem; }
+
+.form-group {
+  margin-left: 3rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(245, 245, 245, 0.397);
+  border: none;
+  font-family: inherit;
+  width: 40%;
   display: block;
-  margin-top: 10px;
-  width: 80%;
-  border-radius: 3px; }
+  border-bottom: 2px solid transparent;
+  margin-bottom: 2rem; }
 
-.book-form input.invalid,
-.book-form select.invalid,
-.book-form:invalid {
-  border-color: #f44336; }
-
-.book-form input[type="checkbox"],
-.book-form input[type="checkbox"] + label {
-  display: inline-block;
-  width: auto; }
-
-.book-form input[type="checkbox"] {
-  border: 1px solid greenyellow;
-  width: 15px;
-  height: 15px; }
-
-.book-form input:not([type="checkbox"]),
-.book-form select {
-  border: 1px solid #ccc;
-  padding: 2.5px 6px;
-  font: inherit; }
-
-.book-form input:focus:not([type="checkbox"]),
-.book-form select:focus {
+.form__input:focus {
   outline: none;
-  background: rgba(238, 232, 232, 0.822);
-  border-color: rgba(191, 233, 129, 0.815); }
+  box-shadow: 0 1rem 2rem rgba(130, 149, 233, 0.103);
+  border-bottom: 2px solid #95d8ca; }
 
-.book-form button[type="submit"] {
-  display: block;
-  width: auto;
-  margin-top: 10px; }
+.lbl__form {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 4rem;
+  margin-top: .5rem;
+  display: block; }
+
+.lbl__form:not(:last-child) {
+  margin-bottom: 5rem; }
