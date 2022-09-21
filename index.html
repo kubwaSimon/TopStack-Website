@@ -13,6 +13,7 @@
     <!--------------------------CSS LINK-------------------------------->
     <link rel="stylesheet" href="style.css">
     <link rel=" stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
+    <script src="https://kit.fontawesome.com/94f8027c2c.js" crossorigin="anonymous"></script>
 
 </head>
 <!--------------------------------------------------------------------------->
@@ -20,41 +21,29 @@
 
 <body>
     <section class="header">
+
+
         <nav>
-
             <a href="#" class="Logo">TopStack Tech</a>
-
-
-            <div class="nav-links" id="Navlinks">
-                <i class="fa-solid fa-xmark" aria-hidden="true" onclick="hidemenu()"></i>
-
-                <ul>
-                    <li>
-                        <a href="#">Home</a> </li>
-                    <li>
-                        <a href="about.html">Services</a> </li>
-                    <li>
-                        <a href="book.html">Contact Us</a> </li>
-                    <li>
-                        <a href="about.html">Profile</a> </li>
-                </ul>
-            </div>
-
-
-
-            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="about.html">Company profile</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <!--------------------------------------------------------------------------------->
+        <div class="header-text">
+            <!------------------------------HEADER-SITE+PARAGRAPH---------------------------------->
+            <div class="text-box">
+                <h1>Kenya's best software developers
+                </h1>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ex blanditiis, facilis repellat rem deserunt provident sed minus sapi</P>
 
-        <!------------------------------HEADER-SITE+PARAGRAPH---------------------------------->
-        <div class="text-box">
-            <h1>Kenya's best software developers
-            </h1>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ex blanditiis, facilis repellat rem deserunt provident sed minus sapi</P>
+                <a href="about.html" class="btn-hero">About TopStack</a>
 
-            <a href="about.html" class="btn-hero">About TopStack</a>
-
-        </div>
+            </div>
     </section>
 
 
@@ -160,27 +149,27 @@
     <section class="footer">
         <h4>About Us</h4>
         <p>TopStack technologies limited prides in providing solutions to all your needs from Websites to e-commerce softwares and many more</p>
-        <div class="icons">
-            <i class="fa-solid fa-phone"></i>
-            <i class="fa-brands fa-facebook-square"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-solid fa-message"></i>
-            <i class="fa-brands fa-whatsapp"></i>
+        <div class="social-icons">
+            <a href=""><i class=" fa-brands fa-facebook "></i></a>
+            <a href=""><i class=" fa-brands fa-twitter-square"></i></a>
+            <a href=""><i class=" fa-brands fa-instagram "></i></a>
+            <a href=""><i class=" fa-brands fa-linkedin "></i></a>
         </div>
         <p>Made by <i class="fa-solid fa-heart"></i>TopStack Developers</p>
 
     </section>
     <!------------------------------------------------------------------------->
     <!---------------------------------------JAVASCRIPT------------------------->
-    <script>
-        var Navlinks = document.getElementById("Navlinks");
 
-        function showmenu() {
-            Navlinks.style.right = "0";
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
         }
 
-        function hidemenu() {
-            Navlinks.style.right = "-200px";
+        function closemenu() {
+            sidemenu.style.right = "-200px";
         }
     </script>
     <!-------------------------------------------------------------------------->

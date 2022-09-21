@@ -14,39 +14,27 @@
 <body>
     <section class="header">
         <nav>
-
             <a href="#" class="Logo">TopStack Tech</a>
-
-
-            <div class="nav-links" id="Navlinks">
-                <i class="fa-solid fa-xmark" aria-hidden="true" onclick="hidemenu()"></i>
-
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a> </li>
-                    <li>
-                        <a href="about.html">Services</a> </li>
-                    <li>
-                        <a href="book.html">Contact Us</a> </li>
-                    <li>
-                        <a href="about.html">Profile</a> </li>
-                </ul>
-            </div>
-
-
-
-            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="about.html">Company profile</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <div class="text-box">
-            <h1>Our services being offered buy us. The best meant for you
+        <div class="header-text">
+            <div class="text-box">
+                <h1>Our services being offered buy us. The best meant for you
 
-            </h1>
-            <P>Kenya's best software services providers, we pride ourselves in being the best and if not one of the best software providers in the country
-            </P>
+                </h1>
+                <P>Kenya's best software services providers, we pride ourselves in being the best and if not one of the best software providers in the country
+                </P>
 
-            <a href="about.html" class="btn-hero">HOME&rarr;</a>
+                <a href="about.html" class="btn-hero">HOME&rarr;</a>
 
-        </div>
+            </div>
     </section>
 
     <body>
@@ -144,14 +132,14 @@
         <!------------------------------------------------------------------------->
         <!---------------------------------------JAVASCRIPT------------------------->
         <script>
-            var Navlinks = document.getElementById("Navlinks");
+            var sidemenu = document.getElementById("sidemenu");
 
-            function showmenu() {
-                Navlinks.style.right = "0";
+            function openmenu() {
+                sidemenu.style.right = "0";
             }
 
-            function hidemenu() {
-                Navlinks.style.right = "-200px";
+            function closemenu() {
+                sidemenu.style.right = "-200px";
             }
         </script>
         <!-------------------------------------------------------------------------->
