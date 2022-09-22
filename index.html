@@ -28,7 +28,7 @@
             <ul id="sidemenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
                 <li><a href="about.html">Company profile</a></li>
                 <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
@@ -137,43 +137,63 @@
 
         </div>
     </section>
-    <!--------------------------------------------------------------------->
-    <!----------------------------------CALL TO ACTION---------------------->
-    <section class="cta">
-        <h1>send us your needs and lets us work on it for you<br> at your comfort</h1>
-        <a href="book.html" class="btn-hero">CONTACT US</a>
+    <!----------------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i></i>contact@xample.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0124536377</p>
+                    <div class="social-icons">
+                        <a href=""><i class=" fa-brands fa-facebook "></i></a>
+                        <a href=""><i class=" fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class=" fa-brands fa-instagram "></i></a>
+                        <a href=""><i class=" fa-brands fa-linkedin "></i></a>
+                    </div>
 
-    </section>
-    <!------------------------------------------------------------------------>
-    <!----------------------------------FOOTER-------------------------------->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>TopStack technologies limited prides in providing solutions to all your needs from Websites to e-commerce softwares and many more</p>
-        <div class="social-icons">
-            <a href=""><i class=" fa-brands fa-facebook "></i></a>
-            <a href=""><i class=" fa-brands fa-twitter-square"></i></a>
-            <a href=""><i class=" fa-brands fa-instagram "></i></a>
-            <a href=""><i class=" fa-brands fa-linkedin "></i></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
         </div>
-        <p>Made by <i class="fa-solid fa-heart"></i>TopStack Developers</p>
+        <!------------------------------------------------------------------------>
+        <!----------------------------------FOOTER-------------------------------->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>TopStack technologies limited prides in providing solutions to all your needs from Websites to e-commerce softwares and many more</p>
+            <div class="social-icons">
+                <a href=""><i class=" fa-brands fa-facebook "></i></a>
+                <a href=""><i class=" fa-brands fa-twitter-square"></i></a>
+                <a href=""><i class=" fa-brands fa-instagram "></i></a>
+                <a href=""><i class=" fa-brands fa-linkedin "></i></a>
+            </div>
+            <p>Made by <i class="fa-solid fa-heart"></i>TopStack Developers</p>
 
-    </section>
-    <!------------------------------------------------------------------------->
-    <!---------------------------------------JAVASCRIPT------------------------->
+        </section>
+        <!------------------------------------------------------------------------->
+        <!---------------------------------------JAVASCRIPT------------------------->
 
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
 
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-    <!-------------------------------------------------------------------------->
-    <script src="script.js"></script>
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <!-------------------------------------------------------------------------->
+        <script src="script.js"></script>
 </body>
 
 
